@@ -422,3 +422,64 @@ a.contact-card:hover {
   .hero-buttons .btn { width: 100%; text-align: center; }
   .certs-grid { grid-template-columns: 1fr; }
 }
+
+/* Mobile CTA */
+.mobile-cta {
+  display: none;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 999;
+  padding: 10px 16px;
+  padding-bottom: max(10px, env(safe-area-inset-bottom));
+  background: rgba(17, 17, 17, 0.96);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 768px) {
+  .mobile-cta { display: flex; gap: 12px; }
+}
+
+.mobile-cta-btn {
+  flex: 1;
+  display: block;
+  text-align: center;
+  padding: 14px 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.mobile-cta-btn:active { transform: scale(0.97); }
+
+.mobile-cta-call {
+  background: var(--accent);
+  color: var(--dark);
+}
+
+.mobile-cta-whatsapp {
+  background: #25D366;
+  color: #fff;
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer padding for mobile CTA */
+@media (max-width: 768px) {
+  .footer { padding-bottom: 100px; }
+}
