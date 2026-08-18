@@ -542,3 +542,94 @@ a.contact-card:hover {
 @media (max-width: 768px) {
   .footer { padding-bottom: 100px; }
 }
+
+/* Homepage featured project */
+.featured-project {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 0;
+  background: var(--dark-3);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 460px;
+}
+
+.featured-image { position: relative; overflow: hidden; }
+
+.featured-image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.featured-project:hover .featured-image img { transform: scale(1.03); }
+
+.featured-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: var(--accent);
+  color: var(--dark);
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  z-index: 2;
+}
+
+.featured-content {
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featured-content h3 {
+  font-size: 1.6rem;
+  color: var(--accent);
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.featured-meta { color: var(--gray); font-size: 0.85rem; margin-bottom: 14px; }
+
+.featured-content p {
+  color: var(--gray);
+  font-size: 0.98rem;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.featured-specs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+
+.featured-specs span {
+  background: rgba(30, 144, 255, 0.12);
+  color: var(--accent);
+  border: 1px solid rgba(30, 144, 255, 0.3);
+  border-radius: 999px;
+  padding: 5px 14px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.featured-buttons { justify-content: flex-start; }
+
+@media (max-width: 900px) {
+  .featured-project { grid-template-columns: 1fr; min-height: 0; }
+  .featured-image { min-height: 340px; }
+  .featured-content { padding: 32px 24px; }
+}
+
+.gallery-cta { text-align: center; margin-top: 32px; }
+
+.section-link { color: var(--accent); text-decoration: none; }
+.section-link:hover { text-decoration: underline; }
