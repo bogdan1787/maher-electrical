@@ -1,5 +1,19 @@
 # Active Context
 
+## Code Changes (2026-08-18 - Lighthouse/SEO pass)
+
+### Modified Files
+- `index.html` - fixed color contrast on `.contact-facebook h3` and `.footer-social` (Facebook blue `#1877F2` -> `#4B9CFF`, WCAG AA); fixed `.mobile-cta-whatsapp` (white on `#25D366` -> dark green `#0A3D24` text); added `width`/`height` attributes to all images (incl. footer logo - CLS fix); wrapped main content in `<main>` landmark
+- `projects/index.html` - wrapped content in `<main>`; aria-label on featured project link now includes visible "Featured" text (label-content-name-mismatch fix); added `width`/`height` to images
+- `projects/solar-portlaoise.html` - wrapped content in `<main>`; added `width`/`height` to all gallery images (CLS fix)
+- `style.css` - `.mobile-cta-whatsapp` color `#fff` -> `#0A3D24`
+- `projects.css` - `.tag` color `var(--accent)` -> `#4B9CFF` (4.2:1 -> 4.86:1)
+
+### Notes
+- Lighthouse (mobile + desktop) now 100/100/100/100 (a11y / best-practices / SEO / agentic-browsing) on all three pages, verified locally
+- Homepage performance: LCP ~480ms, CLS 0.04 (font-swap only)
+- `script.js` and `style.min.css` are not referenced by any HTML (dead files, kept for reference)
+
 ## Code Changes (2026-08-18)
 
 ### Modified Files

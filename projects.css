@@ -111,7 +111,7 @@
 
 .tag {
   background: rgba(30, 144, 255, 0.12);
-  color: var(--accent);
+  color: #4B9CFF;
   border: 1px solid rgba(30, 144, 255, 0.3);
   border-radius: 999px;
   padding: 4px 14px;
