@@ -1,5 +1,48 @@
 # Active Context
 
+## Code Changes (2026-08-18 19:50:00)
+
+### Added Files
+- `projects/index.html` — portfolio overview page listing completed projects (cards + tags + CTA)
+- `projects/solar-portlaoise.html` — project detail page for the Solar PV + Zappi EV charger install in Portlaoise (photos from `Projects/Solar/`, system specs, highlights, CTA)
+- `projects.css` — shared styles for the projects pages
+
+### Modified Files
+- `index.html` — added "Projects" nav link, linked gallery solar image to the project detail page, added "View All Projects" button in the gallery section, added `.gallery-cta`/`.section-link` styles to the inline CSS
+- `sitemap.xml` — added `https://maherelectrical.ie/projects/` and `https://maherelectrical.ie/projects/solar-portlaoise.html`
+
+### Notes
+- Project photos are referenced in place from `Projects/Solar/` (user-created folder)
+- New pages link `../style.css` and `../projects.css` (homepage keeps its inlined CSS for LCP)
+
+
+## Code Changes (2026-08-18 19:35:52)
+
+### Added Files
+- index.html
+- script.js
+- sitemap.xml
+- style.css
+- style.min.css
+
+
+## Code Changes (2026-06-30 09:15:31)
+
+### Added Files
+- index.html
+- script.js
+- sitemap.xml
+- style.css
+
+
+## Code Changes (2026-06-30 08:54:41)
+
+### Added Files
+- index.html
+- script.js
+- style.css
+
+
 ## Current Work Focus
 Domain binding configuration for production deployment.
 
