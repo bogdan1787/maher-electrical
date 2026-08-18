@@ -1,5 +1,17 @@
 # Active Context
 
+## Code Changes (2026-08-18)
+
+### Modified Files
+- `index.html` — removed the "Our Work" gallery section (redundant with the Featured Project section and the Projects page); removed the Gallery nav link; removed now-unused `.gallery-*` / `.section-link` inline CSS; removed the two photos from the Community section and centered the quote (`.community-content` now single column)
+- `projects/index.html` — removed the Gallery nav link
+- `projects/solar-portlaoise.html` — removed the Gallery nav link
+- `style.css` — removed unused `.gallery-*`, `.gallery-cta`, `.section-link` styles
+
+### Notes
+- Nav order everywhere: Home, Services, Projects, Areas, About, Certifications, Contact
+- Portfolio content now lives solely on the Projects page (`projects/`)
+
 ## Code Changes (2026-08-18 20:30:00)
 
 ### Modified Files
