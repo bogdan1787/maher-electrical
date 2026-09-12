@@ -1,5 +1,18 @@
 # Active Context
 
+## Code Changes (2026-09-12 11:53:28)
+
+### Added Files
+- index.html
+- projects\index.html
+- projects\solar-portlaoise.html
+- projects.css
+- script.js
+- sitemap.xml
+- style.css
+- style.min.css
+
+
 ## Code Changes (2026-08-18 - Lighthouse/SEO pass)
 
 ### Modified Files

@@ -394,6 +394,9 @@ a.contact-card:hover {
 
 .footer-copy { margin-top: 24px; font-size: 0.8rem; }
 
+.footer-social { color: #4B9CFF; text-decoration: none; font-weight: 500; transition: color 0.2s; }
+.footer-social:hover { color: var(--accent); }
+
 /* Responsive */
 @media (max-width: 768px) {
   .section { padding: 64px 0; }
@@ -569,7 +572,7 @@ a.contact-card:hover {
 
 .featured-specs span {
   background: rgba(30, 144, 255, 0.12);
-  color: var(--accent);
+  color: #4B9CFF;
   border: 1px solid rgba(30, 144, 255, 0.3);
   border-radius: 999px;
   padding: 5px 14px;
