@@ -1,5 +1,29 @@
 # Active Context
 
+## Code Changes (2026-09-12 — UI/UX overhaul, phases 0-2)
+
+### Modified Files
+- `style.css` — global `img { max-width:100%; height:auto }` (fixes stretched images sitewide); `scroll-padding-top` for fixed header; skip-link styles; `.nav-call` desktop call button; mobile nav breakpoint 768→1024px and menu offset 72→88px; `.hero` photo background + trust badges; compact horizontal `.cert-card` + `.cert-dialog` lightbox; `.about-quote`; consolidated `.card-link` / `.area-card a` / `.contact-facebook`; JS-gated `.reveal` with `prefers-reduced-motion`; section padding 100→80px (56px mobile); hero CTA hidden on mobile (sticky bar covers it)
+- `areas.css` — removed duplicate `.reveal` and `.card-link` (now in style.css)
+- `projects.css` — `.page-hero` 60vh→44vh; `.feature-image` 16/10 ratio; masonry natural-ratio `.project-gallery` (3/2/1 columns); compact `.coming-soon`
+- `index.html` — inlined CSS replaced with `style.css` link (single source of truth); hero badges + visible phone number; About photo now `images/solar-install.jpg` with `<picture>`/srcset; community quote merged into About section (dedicated section removed); certificate thumbnails clickable with lightbox dialog; featured image app-screenshot replaced with Zappi installation photo
+- `projects/index.html`, `projects/solar-portlaoise.html` — featured/feature images replaced with Zappi photo via `<picture>`/srcset; gallery rebuilt with 5 unique photos + captions; og:image updated
+- `solar-pv/index.html`, `areas/laois|offaly|kildare|carlow-kilkenny/index.html` — featured project image replaced with Zappi photo (picture/srcset)
+- all 27 HTML pages — skip link, `<main id="main-content" tabindex="-1">`, JS-enabled class for reveal animations, `.nav-call` desktop button
+
+### Added Files
+- `images/hero-solar-800.jpg`, `images/hero-solar-1600.jpg`
+- Responsive variants (`-400`/`-800`/`-1200` JPG + WebP) for `projects/Solar/*` photos, `images/solar-install`, `images/inspection-cert-1`, `images/inspection-cert-2`, `images/seai-cert`
+
+### Removed Files
+- `screenshot-hero.png` (unused), `images/team-photo.jpg` (unused football photo)
+
+### Notes
+- Root cause of "stretched" photos: HTML `height` attributes acted as CSS height hints because `.about-image img` set `width:100%` without `height:auto` (photo rendered 552×1920 from a 1440×1920 source)
+- Homepage: 7,475px → 5,455px desktop; 11,651px → 8,686px mobile (10.3 screens)
+- Lighthouse 100/100/100/100 (accessibility / best practices / SEO / agentic browsing) verified on homepage + solar project page
+- `.playwright-mcp` review artifacts removed from the repo
+
 ## Code Changes (2026-09-12 11:53:28)
 
 ### Added Files

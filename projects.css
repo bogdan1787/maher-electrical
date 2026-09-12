@@ -1,14 +1,14 @@
 /* Projects pages */
 
 .page-hero {
-  min-height: 60vh;
+  min-height: 44vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   position: relative;
   background: linear-gradient(135deg, var(--dark) 0%, #1a1a1a 40%, #0d0d0d 100%);
-  padding: 160px 24px 80px;
+  padding: 150px 24px 70px;
 }
 
 .page-hero-overlay {
@@ -165,13 +165,13 @@
   border-radius: 12px;
   border: 2px solid rgba(30, 144, 255, 0.2);
   margin-bottom: 48px;
-  max-height: 520px;
+  background: var(--dark-3);
 }
 
 .feature-image img {
   width: 100%;
-  height: 100%;
-  max-height: 520px;
+  height: auto;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
   display: block;
 }
@@ -188,7 +188,7 @@
   color: var(--gray);
   border: 1px dashed rgba(255, 255, 255, 0.12);
   border-radius: 8px;
-  padding: 48px 24px;
+  padding: 28px 24px;
 }
 
 /* Project detail */
@@ -251,30 +251,25 @@
   font-weight: 700;
 }
 
-/* Project photo gallery */
+/* Project photo gallery (masonry, natural aspect ratios) */
 .project-gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 220px;
-  grid-auto-flow: dense;
-  gap: 16px;
+  columns: 3;
+  column-gap: 16px;
 }
 
 .project-gallery figure {
-  margin: 0;
+  margin: 0 0 16px;
   border-radius: 8px;
   overflow: hidden;
   position: relative;
   background: var(--dark-3);
   border: 1px solid rgba(255, 255, 255, 0.06);
+  break-inside: avoid;
 }
-
-.project-gallery figure.tall { grid-row: span 2; }
 
 .project-gallery img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   display: block;
   transition: transform 0.4s;
 }
@@ -322,13 +317,20 @@
 .section-link:hover { text-decoration: underline; }
 
 /* Responsive */
+@media (max-width: 1024px) {
+  .project-gallery { columns: 2; }
+}
+
 @media (max-width: 900px) {
   .project-layout { grid-template-columns: 1fr; gap: 32px; }
+  .feature-image img { aspect-ratio: 4 / 3; }
 }
 
 @media (max-width: 768px) {
-  .page-hero { min-height: auto; padding: 130px 24px 60px; }
+  .page-hero { min-height: auto; padding: 124px 24px 56px; }
   .projects-grid { grid-template-columns: 1fr; }
-  .project-gallery { grid-template-columns: 1fr; grid-auto-rows: 240px; }
-  .project-gallery figure.tall { grid-row: span 1; }
+}
+
+@media (max-width: 640px) {
+  .project-gallery { columns: 1; }
 }

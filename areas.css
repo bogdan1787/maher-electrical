@@ -14,17 +14,6 @@
 
 .area-intro strong { color: var(--light); }
 
-.card-link {
-  display: inline-block;
-  margin-top: 14px;
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.9rem;
-}
-
-.card-link:hover { text-decoration: underline; }
-
 .area-card ul {
   list-style: none;
   margin-top: 12px;
@@ -44,17 +33,6 @@
   left: 0;
   color: var(--accent);
   font-weight: 700;
-}
-
-/* Transform-only reveal on area pages: content stays visible during load */
-.reveal {
-  opacity: 1;
-  transform: translateY(24px);
-  transition: transform 0.6s ease;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .reveal { transition: none; transform: none; }
 }
 
 /* FAQ */
