@@ -1,5 +1,10 @@
 # Active Context
 
+## Code Changes (2026-09-12 — Electric solar-panel navbar)
+
+### Modified Files
+- `style.css` — navbar redesign (applies to all 27 pages, CSS-only): discreet PV-panel shell (faint cell grid + glass glare sweep); animated current line with traveling spark along the bottom edge; logo whitespace cropped via `object-fit: cover` in a white badge with a rotating conic electric ring (`@property --nav-angle`) and flickering bolt accent; electric hover/active link underlines with glow; pulsing gradient call button; mobile dropdown restyled as solid solar-panel panel. New `--nav-h: 76px` variable drives navbar height, `scroll-padding-top` and the mobile dropdown offset. All animations disabled under `prefers-reduced-motion`.
+
 ## Code Changes (2026-09-12 — UI/UX overhaul, phases 0-2)
 
 ### Modified Files
