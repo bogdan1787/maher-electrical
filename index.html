@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>if('IntersectionObserver' in window)document.documentElement.className+=' js'</script>
 <title>Electrician in Mountmellick, Co. Laois | Maher Electrical</title>
-<meta name="description" content="Maher Electrical is a registered electrician in Mountmellick, Co. Laois. Domestic, commercial, industrial, solar PV, EV chargers, inspections & emergency call-outs across Laois, Offaly & Kildare. Call Conn Maher: 085 200 8988.">
+<meta name="description" content="Registered electrician in Mountmellick, Co. Laois — domestic, commercial, solar PV, EV chargers, inspections and emergency call-outs. Call Conn Maher: 085 200 8988.">
 <link rel="canonical" href="https://maherelectrical.ie/">
 <meta property="og:title" content="Electrician in Mountmellick, Co. Laois | Maher Electrical">
 <meta property="og:description" content="Registered electrician in Mountmellick — domestic, commercial, industrial, solar PV, EV chargers, inspections & call-out service across Laois, Offaly & Kildare. Call Conn Maher: 085 200 8988.">
@@ -16,9 +16,11 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@id": "https://maherelectrical.ie/#business",
-  "@type": ["LocalBusiness", "Electrician"],
-  "name": "Maher Electrical",
+  "@graph": [
+    {
+      "@id": "https://maherelectrical.ie/#business",
+      "@type": ["LocalBusiness", "Electrician"],
+      "name": "Maher Electrical",
   "description": "Registered electrician in Mountmellick, Co. Laois. Domestic, commercial, industrial, solar PV, EV chargers, electrical inspections and emergency call-out service across Laois, Offaly and Kildare.",
   "url": "https://maherelectrical.ie/",
   "telephone": "+353852008988",
@@ -71,9 +73,45 @@
   },
   "priceRange": "$$",
   "openingHours": ["Mo-Su 08:00-22:00"],
+  "founder": { "@id": "https://maherelectrical.ie/#conn-maher" },
   "sameAs": [
     "https://wa.me/353852008988",
     "https://www.facebook.com/profile.php?id=61587878583554"
+  ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://maherelectrical.ie/#website",
+      "url": "https://maherelectrical.ie/",
+      "name": "Maher Electrical",
+      "inLanguage": "en-IE",
+      "publisher": { "@id": "https://maherelectrical.ie/#business" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://maherelectrical.ie/#webpage",
+      "url": "https://maherelectrical.ie/",
+      "name": "Electrician in Mountmellick, Co. Laois | Maher Electrical",
+      "description": "Maher Electrical is a registered electrician in Mountmellick, Co. Laois. Domestic, commercial, industrial, solar PV, EV chargers, inspections and emergency call-outs across Laois, Offaly and Kildare.",
+      "isPartOf": { "@id": "https://maherelectrical.ie/#website" },
+      "about": { "@id": "https://maherelectrical.ie/#business" },
+      "mainEntity": { "@id": "https://maherelectrical.ie/#business" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://maherelectrical.ie/#conn-maher",
+      "name": "Conn Maher",
+      "jobTitle": "Owner",
+      "worksFor": { "@id": "https://maherelectrical.ie/#business" },
+      "telephone": "+353852008988",
+      "knowsAbout": [
+        "Electrical installation",
+        "Solar PV installation",
+        "EV charger installation",
+        "Fuse board upgrades",
+        "Electrical inspections"
+      ]
+    }
   ]
 }
 </script>

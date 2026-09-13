@@ -1,5 +1,25 @@
 # Active Context
 
+## Code Changes (2026-09-13 — SEO/GEO pass)
+
+### Modified Files
+- `index.html` — JSON-LD upgraded from a single LocalBusiness object to `@graph` (`#business` + `WebSite` `#website` + `WebPage` + `Person` Conn Maher `#conn-maher`, linked via `founder`); meta description trimmed 226→164 chars
+- 6 service pages (`solar-pv`, `ev-chargers`, `rewiring`, `fuse-board`, `inspections`, `emergency-electrician`) — added `Service` nodes (`provider` → `#business`, `areaServed`, `serviceType`), linked from WebPage `mainEntity`
+- 3 guides — added `Article` nodes (author → `#conn-maher`, publisher → `#business`, datePublished 2026-09-12, dateModified 2026-09-13) + visible "Last updated / Reviewed by Conn Maher" line (`.guide-updated` added to `style.css`)
+- all 14 area pages — new "Popular services / Guides" link block before the back-link (area pages previously linked to no service or guide pages)
+- `projects/index.html`, `projects/solar-portlaoise.html` — duplicate LocalBusiness block replaced with WebPage + BreadcrumbList; visible breadcrumbs added/normalised
+- `rewiring`, `fuse-board`, `inspections` — related-links line (cost guide, sibling services); `guides/*` — related-guide cross-links; title/description trims on homepage, solar-pv, emergency-electrician, ev-chargers, inspections, electrician-costs, both grant guides
+- `robots.txt` — explicit Allow groups for AI crawlers (GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-User, PerplexityBot, Perplexity-User, Google-Extended, Applebot, Applebot-Extended, Bingbot, CCBot)
+- `sitemap.xml` — `xmlns:image` + 10 image entries (home, solar-pv, projects, Portlaoise project); lastmod 2026-09-13 on edited pages
+
+### Added Files
+- `llms.txt` — services, guides, service areas, projects and contact for AI assistants
+
+### Notes
+- FAQPage schema vs visible `<summary>` content audited across all 27 pages: 0 mismatches
+- Internal link check: all hrefs/srcs resolve; sitemap parses (27 URLs, 10 image entries)
+- Known remaining minor issue: some area meta descriptions are 162–179 chars (SERP truncation only)
+
 ## Code Changes (2026-09-12 — Electric solar-panel navbar)
 
 ### Modified Files

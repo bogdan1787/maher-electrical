@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>if('IntersectionObserver' in window)document.documentElement.className+=' js'</script>
-<title>Our Projects | Maher Electrical — Registered Electrical Contractor, Co. Laois</title>
+<title>Electrical Projects Laois | Maher Electrical</title>
 <meta name="description" content="Recent electrical projects by Maher Electrical: solar PV installations, EV charger installations, new build wiring and more across Co. Laois, Offaly and Kildare.">
 <link rel="canonical" href="https://maherelectrical.ie/projects/">
 <meta property="og:title" content="Our Projects | Maher Electrical">
@@ -16,19 +16,25 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "Electrician"],
-  "name": "Maher Electrical",
-  "url": "https://maherelectrical.ie/projects/",
-  "telephone": "+353852008988",
-  "email": "info@maherelectrical.ie",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Mountmellick",
-    "addressLocality": "Mountmellick",
-    "addressRegion": "Co. Laois",
-    "addressCountry": "IE"
-  },
-  "areaServed": ["Co. Laois", "Co. Offaly", "Co. Kildare", "Portlaoise", "Mountmellick", "Tullamore"]
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://maherelectrical.ie/projects/#webpage",
+      "url": "https://maherelectrical.ie/projects/",
+      "name": "Electrical Projects Laois | Maher Electrical",
+      "description": "Recent electrical projects by Maher Electrical: solar PV installations, EV charger installations, new build wiring and more across Co. Laois, Offaly and Kildare.",
+      "about": { "@id": "https://maherelectrical.ie/#business" },
+      "breadcrumb": { "@id": "https://maherelectrical.ie/projects/#breadcrumb" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://maherelectrical.ie/projects/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://maherelectrical.ie/" },
+        { "@type": "ListItem", "position": 2, "name": "Projects", "item": "https://maherelectrical.ie/projects/" }
+      ]
+    }
+  ]
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,6 +76,7 @@
 <section class="page-hero">
   <div class="page-hero-overlay"></div>
   <div class="page-hero-content">
+    <span class="breadcrumb"><a href="../index.html">Home</a> / Projects</span>
     <h1>Our Projects</h1>
     <p class="hero-tagline">Recent installations &amp; completed work</p>
     <p class="hero-sub">Solar PV &middot; EV chargers &middot; New builds &middot; Rewires &middot; Commercial</p>

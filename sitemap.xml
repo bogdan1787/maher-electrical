@@ -1,44 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://maherelectrical.ie/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://maherelectrical.ie/images/hero-solar-1600.jpg</image:loc>
+      <image:title>Solar PV installation by Maher Electrical, Co. Laois</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://maherelectrical.ie/images/solar-install-800.jpg</image:loc>
+      <image:title>Solis solar inverter and home battery installed by Maher Electrical</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://maherelectrical.ie/images/maher-poster.jpg</image:loc>
+      <image:title>Maher Electrical — registered electrical contractor, Mountmellick, Co. Laois</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://maherelectrical.ie/emergency-electrician/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://maherelectrical.ie/solar-pv/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://maherelectrical.ie/projects/Solar/767268930-1200.jpg</image:loc>
+      <image:title>Zappi 7kW EV charger charging on solar power — Portlaoise project by Maher Electrical</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://maherelectrical.ie/ev-chargers/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://maherelectrical.ie/rewiring/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://maherelectrical.ie/fuse-board/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://maherelectrical.ie/inspections/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -50,116 +67,140 @@
   </url>
   <url>
     <loc>https://maherelectrical.ie/guides/solar-grant/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://maherelectrical.ie/guides/ev-charger-grant/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://maherelectrical.ie/guides/electrician-costs/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://maherelectrical.ie/areas/laois/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://maherelectrical.ie/areas/mountmellick/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://maherelectrical.ie/areas/portlaoise/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://maherelectrical.ie/areas/portarlington/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://maherelectrical.ie/areas/mountrath/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://maherelectrical.ie/areas/abbeyleix/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://maherelectrical.ie/areas/offaly/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://maherelectrical.ie/areas/tullamore/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://maherelectrical.ie/areas/edenderry/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://maherelectrical.ie/areas/birr/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://maherelectrical.ie/areas/kildare/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://maherelectrical.ie/areas/athy/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://maherelectrical.ie/areas/carlow-kilkenny/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://maherelectrical.ie/areas/carlow/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://maherelectrical.ie/projects/</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://maherelectrical.ie/projects/Solar/767268930-1200.jpg</image:loc>
+      <image:title>Zappi 7kW EV charger charging on solar power — Portlaoise project by Maher Electrical</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://maherelectrical.ie/projects/solar-portlaoise.html</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://maherelectrical.ie/projects/Solar/768615093-1200.jpg</image:loc>
+      <image:title>Solar inverter, battery and safety isolation installed by Maher Electrical in Portlaoise</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://maherelectrical.ie/projects/Solar/766762637-1200.jpg</image:loc>
+      <image:title>10x 455W rooftop solar PV array in Portlaoise, Co. Laois</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://maherelectrical.ie/projects/Solar/768083749-1200.jpg</image:loc>
+      <image:title>Zappi 7kW EV charger charging a car on solar power in Portlaoise</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://maherelectrical.ie/projects/Solar/768437782-1200.jpg</image:loc>
+      <image:title>App dashboard showing solar generation, battery storage and grid flows</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://maherelectrical.ie/projects/Solar/766194664-1200.jpg</image:loc>
+      <image:title>Portlaoise home running on 100% solar power</image:title>
+    </image:image>
   </url>
 </urlset>
