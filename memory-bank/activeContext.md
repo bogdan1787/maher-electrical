@@ -1,5 +1,94 @@
 # Active Context
 
+## Code Changes (2026-09-13 — IndexNow distribution)
+
+### Added Files
+- `e35ae4b4a1dd42f797d538129800c6d2.txt` — IndexNow key file at site root (content = key)
+- `.github/scripts/indexnow.py` — maps changed `.html` files from the push diff to canonical URLs and POSTs them to `api.indexnow.org`; falls back to all `sitemap.xml` URLs when the sitemap changes, on `workflow_dispatch`, on first push, or if the diff fails; waits for the key file / site to be live before submitting
+- `.github/workflows/indexnow.yml` — runs on push to `main`, checkout with `fetch-depth: 0`, runs the script
+
+### Notes
+- IndexNow feeds Bing/Yandex/Naver/Seznam (Copilot/Bing search); Google does not participate — Google indexing remains sitemap/GSC
+- `.github/` is not published by GitHub Pages branch deploys; the key `.txt` at root is
+- Validated: YAML parses; key file content matches; URL mapping verified against a real 27-page commit range
+
+
+## Code Changes (2026-09-13 07:55:08)
+
+### Added Files
+- areas\abbeyleix\index.html
+- areas\athy\index.html
+- areas\birr\index.html
+- areas\carlow\index.html
+- areas\carlow-kilkenny\index.html
+- areas\edenderry\index.html
+- areas\kildare\index.html
+- areas\laois\index.html
+- areas\mountmellick\index.html
+- areas\mountrath\index.html
+- areas\offaly\index.html
+- areas\portarlington\index.html
+- areas\portlaoise\index.html
+- areas\tullamore\index.html
+- areas.css
+- emergency-electrician\index.html
+- ev-chargers\index.html
+- fuse-board\index.html
+- guides\electrician-costs\index.html
+- guides\ev-charger-grant\index.html
+- guides\index.html
+- guides\solar-grant\index.html
+- index.html
+- inspections\index.html
+- projects\index.html
+- projects\solar-portlaoise.html
+- projects.css
+- rewiring\index.html
+- script.js
+- sitemap.xml
+- solar-pv\index.html
+- style.css
+- style.min.css
+
+
+## Code Changes (2026-09-13 07:53:49)
+
+### Added Files
+- areas\abbeyleix\index.html
+- areas\athy\index.html
+- areas\birr\index.html
+- areas\carlow\index.html
+- areas\carlow-kilkenny\index.html
+- areas\edenderry\index.html
+- areas\kildare\index.html
+- areas\laois\index.html
+- areas\mountmellick\index.html
+- areas\mountrath\index.html
+- areas\offaly\index.html
+- areas\portarlington\index.html
+- areas\portlaoise\index.html
+- areas\tullamore\index.html
+- areas.css
+- emergency-electrician\index.html
+- ev-chargers\index.html
+- fuse-board\index.html
+- guides\electrician-costs\index.html
+- guides\ev-charger-grant\index.html
+- guides\index.html
+- guides\solar-grant\index.html
+- index.html
+- inspections\index.html
+- projects\index.html
+- projects\solar-portlaoise.html
+- projects.css
+- rewiring\index.html
+- script.js
+- sitemap.xml
+- solar-pv\index.html
+- style.css
+- style.min.css
+
+
 ## Code Changes (2026-09-13 — SEO/GEO pass)
 
 ### Modified Files

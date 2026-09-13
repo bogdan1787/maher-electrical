@@ -1,0 +1,27 @@
+name: IndexNow
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Submit new and changed URLs
+        env:
+          INDEXNOW_KEY: e35ae4b4a1dd42f797d538129800c6d2
+          HOST: maherelectrical.ie
+          EVENT_NAME: ${{ github.event_name }}
+          EVENT_BEFORE: ${{ github.event.before }}
+          SHA: ${{ github.sha }}
+        run: python3 .github/scripts/indexnow.py
