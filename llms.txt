@@ -4,6 +4,8 @@
 
 ## Services
 - [House Rewiring & New Build Wiring](https://maherelectrical.ie/rewiring/): Full and partial rewires, first and second fix wiring for new builds, extensions and renovations.
+- [Commercial Electrical Services](https://maherelectrical.ie/commercial-electrical/): Electrical installations, fit-outs, testing and maintenance for shops, offices and businesses.
+- [Industrial Electrical Services](https://maherelectrical.ie/industrial-electrical/): Three-phase installations, machinery hook-ups, distribution boards and maintenance for farms, workshops and industrial premises.
 - [Fuse Board & Consumer Unit Upgrades](https://maherelectrical.ie/fuse-board/): Modern RCBO/RCD protection, surge protection, testing and certification.
 - [Solar PV Installation](https://maherelectrical.ie/solar-pv/): SEAI-registered solar panel installation with battery storage and monitoring for homes, farms and businesses; SEAI grant paperwork handled.
 - [EV Charger Installation](https://maherelectrical.ie/ev-chargers/): Zappi 7kW home chargers with solar integration, plus commercial and fleet charge points.

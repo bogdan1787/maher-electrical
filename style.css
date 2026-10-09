@@ -329,20 +329,36 @@ h1, h2, h3 { font-family: 'Oswald', sans-serif; text-transform: uppercase; }
   justify-content: center;
   text-align: center;
   position: relative;
-  background:
-    linear-gradient(180deg, rgba(10, 10, 10, 0.78) 0%, rgba(10, 10, 10, 0.92) 100%),
-    url('images/hero-solar-1600.jpg') center 35%/cover no-repeat,
-    var(--dark);
+  background: var(--dark);
   padding: 140px 24px 90px;
+}
+
+.hero-picture {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero-picture img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at center, rgba(30,144,255,0.06) 0%, transparent 70%);
+  z-index: 1;
+  background:
+    linear-gradient(180deg, rgba(10, 10, 10, 0.78) 0%, rgba(10, 10, 10, 0.92) 100%),
+    radial-gradient(ellipse at center, rgba(30,144,255,0.06) 0%, transparent 70%);
 }
 
-.hero-content { position: relative; z-index: 1; max-width: 700px; }
+.hero-content { position: relative; z-index: 2; max-width: 700px; }
 
 .hero h1 {
   font-size: clamp(2.2rem, 4.6vw, 3.5rem);
@@ -750,11 +766,9 @@ a.contact-card:hover {
   .hero {
     min-height: auto;
     padding: 128px 24px 72px;
-    background:
-      linear-gradient(180deg, rgba(10, 10, 10, 0.78) 0%, rgba(10, 10, 10, 0.92) 100%),
-      url('images/hero-solar-800.jpg') center 30%/cover no-repeat,
-      var(--dark);
   }
+
+  .hero-picture img { object-position: center 30%; }
 }
 
 @media (max-width: 900px) {
